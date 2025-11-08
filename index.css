@@ -1,0 +1,71 @@
+/*font*/
+.syne-mono-regular {
+  font-family: "Syne Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    font-family: "Syne Mono", monospace;
+}
+
+/*Global configurations*/
+.contenedor {
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col {
+    min-height: 200px;
+    width: 30%;
+    margin-bottom: 40px;
+    background-color: #651eff;
+}
+
+.hideDesktopOnly {
+    display: none;
+}
+
+.col img {
+    width: 100%;
+    height: auto;
+}
+
+.col p::first-line {
+    font-family: "Syne Mono", monospace;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+.col p {
+    font-family: "Syne Mono", monospace;
+    color: white;
+    font-size: 0.875rem;
+    padding: 20px 30px;
+    line-height: 1.2rem;
+}
+
+
+/* Tablet view */
+@media (max-width: 780px) {
+  .col {
+      width: 50%;
+  }
+    .hideDesktopOnly {
+        display: block;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 580px) {
+  .col {
+      width: 100%;
+  }
+  .hideMobileOnly {
+    display: none;
+}
+}
